@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/clock.css";
 
-const Clock = () => {
+const Clock = (props) => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -17,7 +17,6 @@ const Clock = () => {
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit",
-      // stop showing ampm
       hour12: false,
     };
     const formattedTime = time.toLocaleTimeString([], options);
@@ -25,13 +24,14 @@ const Clock = () => {
 
     return (
       <div className="Time">
-        <span className="formatTime">{ampm}</span>
+        <span className="formatTime" style={props.ampmStyle}>{ampm}</span>
         {formattedTime}
       </div>
     );
   };
 
-  return <div className="finalTime">{formatTime(time)}</div>;
+  return <div className="finalTime" style={props.fTimeStyle}>{formatTime(time)}</div>;
 };
 
 export default Clock;
+

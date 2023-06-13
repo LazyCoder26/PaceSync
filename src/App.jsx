@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/App.css";
 import "./css/index.css";
-import Clock from "./components/clock";
+import Light from "./themes/Light";
+import Dark from "./themes/Dark";
+import { Switch } from "@nextui-org/react";
 
 const App = () => {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const handleThemeToggle = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
+
   return (
     <div id="App">
-      <p className="title">
-        <span className="title1">Pace</span>
-        <span className="title2">Sync</span>
-      </p>
+      <div className="switch">
+        <Switch animated checked={isDarkTheme} onChange={handleThemeToggle} />
+      </div>
       <div className="time">
-        <Clock />
+        {isDarkTheme ? <Dark /> : <Light />}
       </div>
     </div>
   );
