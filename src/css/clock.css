@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.Time {
+  color: #ffffff;
+  font-size: 12rem;
+  font-weight: 900;
+  font-family: "DM Mono", monospace;
+  text-align: center;
+}
+
+.formatTime {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+  position: relative;
+  top: -7.5rem;
+}
+
+.finalTime {
+  /* center this */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ================ media queries ============ */
+/* ================ iPhone SE =============== */
+
+@media screen and (max-width: 768px) {
+  .Time {
+    font-size: 5rem;
+  }
+  .formatTime {
+    font-size: 0.8rem;
+    top: -3.5rem;
+    /* padding left and right */
+    padding: 0 1rem;
+  }
+
+  /* rotate it 90 degrees */
+  .finalTime {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  /* make it a bit smaller */
+  .formatTime span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .finalTime {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+/* ==================== iPad ========================== */
+
+@media screen and (max-width: 1024px) {
+  .Time {
+    font-size: 5rem;
+  }
+  .formatTime {
+    font-size: 1.5rem;
+    top: -5rem;
+    /* padding left and right */
+    padding: 0 1rem;
+  }
+
+  .finalTime {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  /* make it a bit smaller */
+  .formatTime span {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 1180px) {
+  .Time {
+    font-size: 9rem;
+  }
+  .formatTime {
+    font-size: 1.5rem;
+    top: -5rem;
+    /* padding left and right */
+    padding: 0 1rem;
+  }
+
+  .finalTime {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  /* make it a bit smaller */
+  .formatTime span {
+    font-size: 1.5rem;
+  }
+}
+
+/* @media screen and (max-width: 1368px) {
+  .Time {
+    font-size: 12rem;
+  }
+  .formatTime {
+    font-size: 1.7rem;
+    top: -7.5rem;
+    padding: 0 1rem;
+  }
+
+  .finalTime {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  .formatTime span {
+    font-size: 1.7rem;
+  }
+} */
