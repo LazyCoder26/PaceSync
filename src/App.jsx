@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div className={isDarkTheme ? "App-dark" : "App-light"}>
-      <div className="switch">
+      <div className="switch fixed">
         <Switch animated checked={isDarkTheme} onChange={handleThemeToggle} />
       </div>
       <div className="time">
