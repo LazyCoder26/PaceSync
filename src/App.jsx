@@ -4,7 +4,6 @@ import "./css/index.css";
 import Light from "./themes/Light";
 import Dark from "./themes/Dark";
 import { Switch } from "@nextui-org/react";
-import { Analytics } from "@vercel/analytics"
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -21,7 +20,6 @@ const App = () => {
       <div className="time">
         {isDarkTheme ? <Dark /> : <Light />}
       </div>
-      <Analytics />
     </div>
   );
 };
