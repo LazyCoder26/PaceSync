@@ -25,6 +25,28 @@
 /* ================ media queries ============ */
 /* ================ iPhone SE =============== */
 
+@media screen and (max-width: 667px){
+  .Time {
+    font-size: 4rem;
+  }
+  .formatTime {
+    font-size: 0.8rem;
+    top: -3.5rem;
+    /* padding left and right */
+    padding: 0 1rem;
+  }
+
+  /* rotate it 90 degrees */
+  .finalTime {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  /* make it a bit smaller */
+  .formatTime span {
+    font-size: 0.8rem;
+  }  
+}
+
 @media screen and (max-width: 768px) {
   .Time {
     font-size: 5rem;
