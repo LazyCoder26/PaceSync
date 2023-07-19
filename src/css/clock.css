@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 667px){
   .Time {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .formatTime {
     font-size: 0.8rem;
