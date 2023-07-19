@@ -120,13 +120,16 @@
   }
 }
 
-/* @media screen and (max-width: 1368px) {
+/* add media query for 24 inch and 15inch monitors */
+
+@media screen and (max-width: 1440px , min-width: 1024px) {
   .Time {
-    font-size: 12rem;
+    font-size: 10rem;
   }
   .formatTime {
-    font-size: 1.7rem;
+    font-size: 2rem;
     top: -7.5rem;
+    /* padding left and right */
     padding: 0 1rem;
   }
 
@@ -134,7 +137,29 @@
     transform: translate(-50%, -50%) rotate(90deg);
   }
 
+  /* make it a bit smaller */
   .formatTime span {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
-} */
+}
+
+@media screen and (max-width: 2560px, min-width: 1440px) {
+  .Time {
+    font-size: 12rem;
+  }
+  .formatTime {
+    font-size: 2rem;
+    top: -7.5rem;
+    /* padding left and right */
+    padding: 0 1rem;
+  }
+
+  .finalTime {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  /* make it a bit smaller */
+  .formatTime span {
+    font-size: 2rem;
+  }
+}
