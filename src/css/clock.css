@@ -122,9 +122,9 @@
 
 /* add media query for 24 inch and 15inch monitors */
 
-@media screen and (max-width: 1440px , min-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .Time {
-    font-size: 10rem;
+    font-size: 14rem;
   }
   .formatTime {
     font-size: 2rem;
@@ -143,9 +143,9 @@
   }
 }
 
-@media screen and (max-width: 2560px, min-width: 1440px) {
+@media screen and (max-width: 2560px) {
   .Time {
-    font-size: 12rem;
+    font-size: 16rem;
   }
   .formatTime {
     font-size: 2rem;
